@@ -28,6 +28,7 @@ public class BlockgetAccount {
      */
     public Account getAccountByName(String accountName) {
 
+        connectionExample = new BlockgetConnection();
         final DCoreApi dcoreApi = connectionExample.connect();
 
         return dcoreApi
